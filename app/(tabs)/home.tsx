@@ -10,8 +10,8 @@ export default function HomeScreen() {
 
   const handleLogout = async () => {
     try {
-      await signOut(auth); // ✅ Logs out the user
-      router.replace("/"); // ✅ Redirect to Login (prevents back navigation)
+      await signOut(auth); 
+      router.replace("/"); 
     } catch (error) {
       console.error("Logout Error:", error.message);
     }
@@ -38,7 +38,7 @@ export default function HomeScreen() {
   );
 }
 
-// ✅ **Styles for Better UI**
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   button: {
     width: "100%",
-    backgroundColor: "#6200EE", // Nice purple shade
+    backgroundColor: "#6200EE", 
     marginTop: 10,
   },
 });
